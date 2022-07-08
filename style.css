@@ -1,0 +1,165 @@
+style.css
+Quem pode acessar
+
+Propriedades do sistema
+Tipo
+Folha de estilo
+Tamanho
+3 KB
+Armazenamento usado
+3 KB
+Local
+Parabéns
+Proprietário
+eu
+Modificado
+18:53 por mim
+Aberto
+17:51 por mim
+Criado em
+16:24 com o Google Drive Web (Unverified)
+Adicionar uma descrição
+Os leitores podem fazer o download
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Righteous&family=Tangerine:wght@700&display=swap');
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html, body{
+    margin-top: 40px;
+    height: 100%;
+    width: 100%;
+    font-family: 'Dancing Script', 'Righteous', sans-serif;
+    font-weight: 300;
+    background: #371B58;
+    overflow: hidden;
+}
+.flip-card-3D-wrapper {
+  width: 60%;
+  height: 80%;
+  max-width: 300px;
+  max-height: 400px;
+  position: relative;
+  -o-perspective: 900px;
+  -webkit-perspective: 900px;
+  -ms-perspective: 900px;
+  perspective: 900px;
+  margin: 0 auto;
+}
+#flip-card {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 50px auto;
+  position: absolute;
+  -o-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -o-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.do-flip {
+  -o-transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+.reverse-flip {
+  -o-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}  
+#flip-card-btn-turn-to-back{
+  font-size: 28px;
+  position: absolute;
+  top: 120px;
+  right: 345px;
+  width: 20px;
+  height: 260px;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  visibility: hidden;
+  font-family: 'Righteous', sans-serif;
+  font-weight: 300;
+  padding: 0;
+  color: grey;
+  border: 1px hidden rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+} 
+
+#flip-card-btn-turn-to-front {
+  font-size: 28px;
+  position: absolute;
+  top: 120px;
+  right: -60px;
+  width: 20px;
+  height: 260px;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  visibility: hidden;
+  font-family: 'Righteous', sans-serif;
+  font-weight: 300;
+  padding: 0;
+  color: grey;
+  border: 1px hidden rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+#flip-card .flip-card-front, #flip-card .flip-card-back{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 2;
+  -webkit-box-shadow: 5px 6px 32px 2px rgba(133,133,133,0.71);
+  -moz-box-shadow: 5px 6px 32px 2px rgba(133,133,133,0.71);
+  box-shadow: 5px 6px 32px 2px rgba(133,133,133,0.71);
+}
+#flip-card .flip-card-front{
+    font-family: 'Righteous';
+    font-size: 48px;
+    background: #4FD3C4;
+    border:1px solid grey;
+    border-radius:3px;
+    -o-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+
+#flip-card .flip-card-back{
+    font-size: 40px;
+    background: #4FD3C4;
+    border: 1px solid grey;
+}
+
+#flip-card .flip-card-back-flip {
+    -o-transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+#flip-card .flip-card-front p, #flip-card .flip-card-back p {
+  color: black;
+  display: block;
+  position: absolute;
+  top: 2%;
+  width: 100%;
+  padding: 15px;
+}
+
+#flip-card .flip-card-front p{
+    top: 25%;
+}
